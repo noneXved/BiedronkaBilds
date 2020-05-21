@@ -1,0 +1,7 @@
+package bajno.domalewski;
+dialect  "mvel"
+
+rule "bildrules"
+    when
+    then
+end
