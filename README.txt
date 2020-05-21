@@ -1,0 +1,1 @@
+bajno.domalewski.BiedronkaBilds is school project to learn using Drools from JBoss.
