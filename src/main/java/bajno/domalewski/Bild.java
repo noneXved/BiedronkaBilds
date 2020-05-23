@@ -1,27 +1,36 @@
 package bajno.domalewski;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Bild {
-    private String nameProduct;
-    private int price;
+    Product product;
+    ArrayList<Product> listOfProducts = new ArrayList<>();
 
-    public Bild(String name, int price) {
-        this.nameProduct = name;
-        this.price = price;
+    public Bild() {
+        addProductsToArray();
+        printProducts();
     }
 
-    public String getNameProduct() {
-        return nameProduct;
+    public void addProductsToArray() {
+        product = new Product("mleko", 1.99);
+        listOfProducts.add(product);
+        product = new Product("kanapka", 3.99);
+        listOfProducts.add(product);
+        product = new Product("maslo", 4.39);
+        listOfProducts.add(product);
+        product = new Product("chleb", 1.59);
+        listOfProducts.add(product);
+        product = new Product("ziemniaki", 2.29);
+        listOfProducts.add(product);
+        product = new Product("ketchup", 3.29);
+        listOfProducts.add(product);
+        product = new Product("piwo", 2.59);
+        listOfProducts.add(product);
     }
 
-    public void setNameProduct(String nameProduct) {
-        this.nameProduct = nameProduct;
-    }
+    public void printProducts() {
+        System.out.println(Arrays.deepToString(new ArrayList[]{listOfProducts}));
 
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 }
